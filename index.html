@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Qr code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <!-- Firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyACn8ZxVliT_I9EtRN2K7EAxUdzChhSmYc",
+            authDomain: "xxyyzz-75527.firebaseapp.com",
+            projectId: "xxyyzz-75527",
+            storageBucket: "xxyyzz-75527.firebasestorage.app",
+            messagingSenderId: "794008660679",
+            appId: "1:794008660679:web:fbf0c87890a926675f2ce2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <canvas id="qrcode"></canvas>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="preview" src="#" alt="Preview" style="display: none; max-width: 300px;">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
